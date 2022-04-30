@@ -8,11 +8,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
 	<!-- NAV BAR -->
-	<header class="wrapper-grid" style="padding-top: 16px;">
-		<nav>
+	<header style="padding-top: 16px;">
+		<nav class="wrapper-grid">
 				<ul>
 					<ul class="nav-container">
 						<a><li><h2>About</h2></li></a>
@@ -24,16 +25,26 @@
 						<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
 						<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
 					</ul>
+					<img src="assets/List.svg" id="menu-icon" onclick="openMenu()">
 				</ul>
 		</nav>
-		<div class="seperator-h" style="background-color: #222226;"></div>
+		<div id="dropdown-menu">
+			<a><h2>About</h2></a>
+			<a><h2>Contact</h2></a>
+			<ul>
+				<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
+				<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
+				<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
+			</ul>
+		</div>
+		<div class="seperator-h" style="background-color: #222226; margin: 0 var(--gap);"></div>
 	</header>
 
 	<!-- HERO BANNER -->
 	<main>
 		<section class="hero-banner">
-			<div class="wrapper-grid">
-				<div class="text-container_grid2-6">
+			<div class="wrapper-grid web-elem">
+				<div class="h-container_grid">
 					<div class="line-wrapper">
 						<h1>Hi yall,</h1>
 						<div class="image-wrapper"><img width="479px" style="transform: translate(-1%, -50%);" src="assets/pattern-big.png"></div>
@@ -51,16 +62,44 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="hero-images">
-				<img class="glowing-img" src="assets/cover-trekkrs-glow.png">
-				<div class="hero-images-wrapper">
-					<img src="assets/cover-rsf.jpeg">
-					<img src="assets/cover-trekkrs.jpeg">
-					<img src="assets/cover-panda.jpeg">
-					<img src="assets/cover-rei.jpeg">
+			<div class="h-container_grid mobile-elem">
+				<div class="line-wrapper">
+					<h1>Hi yall,</h1>
+					<div class="image-wrapper"><img width="290px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-b.png"></div>
+				</div>
+				<div>
+					<div class="line-wrapper">
+						<div class="image-wrapper"><img width="100px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-s2.png"></div>
+						<h1>What's</h1>
+					</div>
+					<div class="line-wrapper">
+						<div class="image-wrapper"><img width="100px" style="transform: translate(-1%, -30%);" src="assets/pattern-mobile-s1.png"></div>
+						<h1>good</h1>
+					</div>
+				</div>
+				<div>
+					<div class="line-wrapper">
+						<h1>Cương</h1>
+						<div class="image-wrapper"><img width="140px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-s3.png"></div>
+					</div>
+					<div class="line-wrapper">
+						<h1>here</h1>
+						<div class="image-wrapper"><img width="290px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-b.png"></div>
+					</div>
 				</div>
 			</div>
+
+			<img class="hero-images web-elem" src="assets/frame-web.png">
+			<img class="hero-images mobile-elem" src="assets/frame-mobile.png">
+			<!-- <div class="hero-images">
+				<img class="glowing-img" src="assets/cover-trekkrs.jpeg">
+				<div class="hero-images-container">
+					<div><img src="assets/cover-rsf.jpeg"></div>
+					<div style="max-height: 200px;"><img src="assets/cover-trekkrs.jpeg"></div>
+					<div><img src="assets/cover-panda.jpeg"></div>
+					<div><img src="assets/cover-rei.jpeg"></div>
+				</div>
+			</div> -->
 		</section>
 
 		<!-- ABOUT ME -->
@@ -70,14 +109,14 @@
 			<div class="aboutme-container">
 				<h2>I. About me</h2>
 				<h1>Comp-sci,<br>design,<br>& more!!!</h1>
-				<div class="button" style="width: 248px;"><h2>Read more</h2></div>
+				<div class="button"><h2>Read more</h2></div>
 			</div>
 		</section>
 
 		<!-- WORKS -->
 		<section class="my-works">
 			<div class="wrapper-grid" style="padding-top: 128px;">
-				<div class="text-container_grid2-6">
+				<div class="h-container_grid">
 					<h2>II. My works</h2>
 					<p style="text-align: left;">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus dui a mattis venenatis. Sed dictum eu sapien eget volutpat. Pellentesque convallis vitae nunc vel posuere. Morbi non vestibulum leo. Sed malesuada mauris sed ultrices ultrices.</p>
@@ -109,7 +148,7 @@
 					<div class="footer-wrapper">
 						<img src="assets/cLogo-white.svg" alt="logo" width="92px" height="92px">
 
-						<div class="seperator-v" style="background-color: #F4F4F4;"></div>
+						<div class="seperator-v web-elem" style="background-color: #F4F4F4;"></div>
 
 						<div class="footer-contact">
 							<div>
