@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>
@@ -16,12 +17,14 @@
 		<nav class="wrapper-grid">
 				<ul>
 					<ul class="nav-container">
-						<a><li><h2>About</h2></li></a>
-						<a><li><h2>Contact</h2></li></a>
+						<a href="about.html"><li><h2>About</h2></li></a>
+						<a href="works.html"><li><h2>Works</h2></li></a>
 					</ul>
-					<li><img src="assets/cLogo.svg" width="54px" height="54px"></li>
+					<li><a href="index.html"><img src="assets/cLogo.svg" width="54px" height="54px"></a></li>
 					<ul class="nav-container">
-						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
+						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li>
+							<img class="nav-icon" src="assets/LinkedinLogo.svg">
+						</li></a>
 						<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
 						<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
 					</ul>
@@ -29,8 +32,8 @@
 				</ul>
 		</nav>
 		<div id="dropdown-menu">
-			<a><h2>About</h2></a>
-			<a><h2>Contact</h2></a>
+			<a href="about.html"><h2>About</h2></a>
+			<a href="works.html"><h2>Works</h2></a>
 			<ul>
 				<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
 				<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
@@ -43,63 +46,62 @@
 	<!-- HERO BANNER -->
 	<main>
 		<section class="hero-banner">
-			<div class="wrapper-grid web-elem">
-				<div class="h-container_grid">
+			<div class="wrapper-grid">
+				<div class="h-container_grid web-elem">
 					<div class="line-wrapper">
 						<h1>Hi yall,</h1>
-						<div class="image-wrapper"><img width="479px" style="transform: translate(-1%, -50%);" src="assets/pattern-big.png"></div>
+						<div class="image-wrapper"><img src="assets/pattern-big.png" style="
+              transform: scale(4);"></div>
 					</div>
 					<div class="line-wrapper">
-						<div class="image-wrapper"><img width="223px" style="transform: translate(-1%, -50%);" src="assets/pattern-small-1.png"></div>
+						<div class="image-wrapper"><img src="assets/pattern-small-1.png" style="
+              transform: scale(2.5) translate(10%, 0);"></div>
 						<h1>What's good</h1>
 					</div>
 					<div class="line-wrapper">
-						<h1>Cương here</h1>
+						<h1 style="letter-spacing: -12.4px;">C ươn g &nbsp;h e r e&nbsp;</h1>
 						<div class="button">
 							<h2>My resume</h2>
 							<img src="assets/FileArrowDown.svg">
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="h-container_grid mobile-elem">
-				<div class="line-wrapper">
-					<h1>Hi yall,</h1>
-					<div class="image-wrapper"><img width="290px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-b.png"></div>
-				</div>
-				<div>
+				
+				<div class="h-container_grid mobile-elem" style="text-align: start;">
 					<div class="line-wrapper">
-						<div class="image-wrapper"><img width="100px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-s2.png"></div>
-						<h1>What's</h1>
+						<h1>Hi yall,</h1>
+						<div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
+							transform: scale(4) translate(36%, 0);"></div>
 					</div>
-					<div class="line-wrapper">
-						<div class="image-wrapper"><img width="100px" style="transform: translate(-1%, -30%);" src="assets/pattern-mobile-s1.png"></div>
-						<h1>good</h1>
+					<div>
+						<div class="line-wrapper">
+							<div class="image-wrapper"><img src="assets/pattern-mobile-s2.png" style="
+								transform: scale(4) translate(36%, 0);"></div>
+							<h1>What's</h1>
+						</div>
+						<div class="line-wrapper">
+							<div class="image-wrapper"><img src="assets/pattern-mobile-s1.png" style="
+								transform: scale(4) translate(36%, 16%);"></div>
+							<h1>good</h1>
+						</div>
 					</div>
-				</div>
-				<div>
-					<div class="line-wrapper">
-						<h1>Cương</h1>
-						<div class="image-wrapper"><img width="140px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-s3.png"></div>
-					</div>
-					<div class="line-wrapper">
-						<h1>here</h1>
-						<div class="image-wrapper"><img width="290px" style="transform: translate(-1%, -50%);" src="assets/pattern-mobile-b.png"></div>
+					<div>
+						<div class="line-wrapper">
+							<h1 style="letter-spacing: -12.4px;">C ươn g&nbsp;</h1>
+							<div class="image-wrapper"><img src="assets/pattern-mobile-s3.png" style="
+								transform: scale(7) translate(40%, 10%);"></div>
+						</div>
+						<div class="line-wrapper">
+							<h1>here</h1>
+							<div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
+								transform: scale(4) translate(30%, 10%);"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<img class="hero-images web-elem" src="assets/frame-web.png">
 			<img class="hero-images mobile-elem" src="assets/frame-mobile.png">
-			<!-- <div class="hero-images">
-				<img class="glowing-img" src="assets/cover-trekkrs.jpeg">
-				<div class="hero-images-container">
-					<div><img src="assets/cover-rsf.jpeg"></div>
-					<div style="max-height: 200px;"><img src="assets/cover-trekkrs.jpeg"></div>
-					<div><img src="assets/cover-panda.jpeg"></div>
-					<div><img src="assets/cover-rei.jpeg"></div>
-				</div>
-			</div> -->
 		</section>
 
 		<!-- ABOUT ME -->

@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cuong Nguyen's portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styleAbout.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<!-- NAV BAR -->
+	<header style="padding-top: 16px;">
+		<nav class="wrapper-grid">
+				<ul>
+					<ul class="nav-container">
+						<a href="about.html"><li><h2>About</h2></li></a>
+						<a href="" style="color: #E860ED;"><li><h2>Works</h2></li></a>
+					</ul>
+					<li><a href="index.html"><img src="assets/cLogo.svg" width="54px" height="54px"></a></li>
+					<ul class="nav-container">
+						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
+						<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
+						<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
+					</ul>
+					<img src="assets/List.svg" id="menu-icon" onclick="openMenu()">
+				</ul>
+		</nav>
+		<div id="dropdown-menu">
+			<a href="about.html"><h2>About</h2></a>
+			<a href="" style="color: #E860ED;"><h2>Works</h2></a>
+			<ul>
+				<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
+				<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
+				<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
+			</ul>
+		</div>
+		<div class="seperator-h" style="background-color: #222226; margin: 0 var(--gap);"></div>
+	</header>
+
+	<!-- HERO BANNER -->
+	<main>
+		<section class="hero-banner">
+			<div class="wrapper-grid">
+        <div class="h-container_grid web-elem">
+					<div class="line-wrapper">
+            <div class="image-wrapper"><img src="assets/pattern-big.png" style="
+              transform: scale(3) translate(10%, 10%);"></div>
+						<h1>My works</h1>
+						<div class="image-wrapper"><img src="assets/pattern-big.png" style="
+              transform: scale(3) translate(-10%, 10%);"></div>
+					</div>
+        </div>
+        <div class="h-container_grid mobile-elem">
+					<div>
+            <div class="line-wrapper">
+              <h1>My</h1>
+              <div class="image-wrapper"><img src="assets/pattern-mobile-s2.png" style="
+                transform: scale(3) translate(-10%, 5%);"></div>
+            </div>
+            <div class="line-wrapper">
+              <div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
+                transform: scale(3.2) translate(0, 5%);"></div>
+              <h1>works</h1>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+          <p>To be updated in the future!</p>
+        </div>
+			</div>
+		</section>
+
+		<section class="my-works">
+			<div class="wrapper-grid" style="padding-top: 128px;">
+				<!-- FOOTER -->
+				<footer>
+					<div class="seperator-h" style="background-color: #F4F4F4;"></div>
+
+					<div class="footer-wrapper">
+						<img src="assets/cLogo-white.svg" alt="logo" width="92px" height="92px">
+
+						<div class="seperator-v web-elem" style="background-color: #F4F4F4;"></div>
+
+						<div class="footer-contact">
+							<div>
+								<small>Email:</small>
+								<a href="mailto:ckn006@bucknell.edu"><em>ckn006@bucknell.edu</em></a>
+							</div>
+							<div>
+								<small>Phone:</small>
+								<em>+1 272 788-0021</em>
+							</div>
+							<div>
+								<small>Follow me:</small>
+								<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><em>Linkedin</em></a>
+								<a href="https://github.com/nkcuong2761" target="_blank"><em>Github</em></a>
+								<a href="https://dribbble.com/ckuong" target="_blank"><em>Dribbble</em></a>
+							</div>
+						</div>
+
+					</div>
+				</footer>
+
+			</div>
+		</section>
+	</main>
+
+	<!-- COPYRIGHT -->
+	<section class="copyright">
+		<small>All ©RIGHTS RESERVED</small>
+	</section>
+	
+</body>
+</html>

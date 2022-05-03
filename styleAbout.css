@@ -1,0 +1,34 @@
+.img-bizpitch {
+  width: 100%;
+  height: 850px;
+  object-fit: cover;
+  padding-top: 5rem;
+  filter: drop-shadow(0px 4px 115px rgba(232, 96, 237, 0.0969343)) drop-shadow(0px 0.893452px 25.6868px rgba(232, 96, 237, 0.143066)) drop-shadow(0px 0.266004px 7.64762px rgba(232, 96, 237, 0.24));
+}
+
+.wrapper-grid div p {
+  width: var(--widthPara);
+  max-width: var(--maxWidthPara);
+  text-align: start;
+  padding-top: 5rem;
+}
+
+.wrapper-grid .button {
+  width: 424px;
+  align-self: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 651px) {
+  .img-bizpitch {
+    padding-top: 3rem;
+    height: 520px;
+  }
+  .wrapper-grid div p {
+    padding-top: 3rem;
+    width: 100%;
+  }
+  .wrapper-grid .button {
+    width: 100%;
+  }
+}
