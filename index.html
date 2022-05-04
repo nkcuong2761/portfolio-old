@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<!-- NAV BAR -->
@@ -22,11 +22,9 @@
 					</ul>
 					<li><a href="index.html"><img src="assets/cLogo.svg" width="54px" height="54px"></a></li>
 					<ul class="nav-container">
-						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li>
-							<img class="nav-icon" src="assets/LinkedinLogo.svg">
-						</li></a>
-						<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
-						<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
+						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="nav-icon" id="linkedin"></a>
+						<a href="https://github.com/nkcuong2761" target="_blank" class="nav-icon" id="github"></a>
+						<a href="https://dribbble.com/ckuong" target="_blank" class="nav-icon" id="dribbble"></a>
 					</ul>
 					<img src="assets/List.svg" id="menu-icon" onclick="openMenu()">
 				</ul>
@@ -49,27 +47,41 @@
 			<div class="wrapper-grid">
 				<div class="h-container_grid web-elem">
 					<div class="line-wrapper">
-						<h1>Hi yall,</h1>
+						<div class="heading-wrapper">
+							<h1>Hi yall,</h1>
+						</div>
 						<div class="image-wrapper"><img src="assets/pattern-big.png" style="
               transform: scale(4);"></div>
 					</div>
 					<div class="line-wrapper">
 						<div class="image-wrapper"><img src="assets/pattern-small-1.png" style="
               transform: scale(2.5) translate(10%, 0);"></div>
-						<h1>What's good</h1>
+						<div class="heading-wrapper">
+							<h1 class="delay1">What's good</h1>
+						</div>
 					</div>
 					<div class="line-wrapper">
-						<h1 style="letter-spacing: -12.4px;">C ươn g &nbsp;h e r e&nbsp;</h1>
-						<div class="button">
+						<div class="heading-wrapper">
+							<h1 class="delay2" style="letter-spacing: -12.4px;">C ươn g &nbsp;h e r e&nbsp;</h1>
+						</div>
+						<a class="button">
 							<h2>My resume</h2>
-							<img src="assets/FileArrowDown.svg">
+							<svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M22.375 24.5H6.625C6.39294 24.5 6.17038 24.4078 6.00628 24.2437C5.84219 24.0796 5.75 23.8571 5.75 23.625V4.375C5.75 4.14294 5.84219 3.92038 6.00628 3.75628C6.17038 3.59219 6.39294 3.5 6.625 3.5H17.125L23.25 9.625V23.625C23.25 23.8571 23.1578 24.0796 22.9937 24.2437C22.8296 24.4078 22.6071 24.5 22.375 24.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M17.125 3.5V9.625H23.25" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M11.4375 17.0625L14.5 20.125L17.5625 17.0625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14.5 13.125V20.125" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
 						</div>
 					</div>
 				</div>
 				
 				<div class="h-container_grid mobile-elem" style="text-align: start;">
 					<div class="line-wrapper">
-						<h1>Hi yall,</h1>
+						<div class="heading-wrapper">
+							<h1>Hi yall,</h1>
+						</div>
 						<div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
 							transform: scale(4) translate(36%, 0);"></div>
 					</div>
@@ -77,22 +89,30 @@
 						<div class="line-wrapper">
 							<div class="image-wrapper"><img src="assets/pattern-mobile-s2.png" style="
 								transform: scale(4) translate(36%, 0);"></div>
-							<h1>What's</h1>
+							<div class="heading-wrapper">
+								<h1>What's</h1>
+							</div>
 						</div>
 						<div class="line-wrapper">
 							<div class="image-wrapper"><img src="assets/pattern-mobile-s1.png" style="
 								transform: scale(4) translate(36%, 16%);"></div>
-							<h1>good</h1>
+							<div class="heading-wrapper">
+								<h1>good</h1>
+							</div>
 						</div>
 					</div>
 					<div>
 						<div class="line-wrapper">
-							<h1 style="letter-spacing: -12.4px;">C ươn g&nbsp;</h1>
+							<div class="heading-wrapper">
+								<h1 style="letter-spacing: -12.4px;">C ươn g&nbsp;</h1>
+							</div>
 							<div class="image-wrapper"><img src="assets/pattern-mobile-s3.png" style="
 								transform: scale(7) translate(40%, 10%);"></div>
 						</div>
 						<div class="line-wrapper">
-							<h1>here</h1>
+							<div class="heading-wrapper">
+								<h1>here</h1>
+							</div>
 							<div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
 								transform: scale(4) translate(30%, 10%);"></div>
 						</div>
@@ -110,8 +130,16 @@
 			<img class="img-2" src="assets/pink-bg.png">
 			<div class="aboutme-container">
 				<h2>I. About me</h2>
-				<h1>Comp-sci,<br>design,<br>& more!!!</h1>
-				<div class="button"><h2>Read more</h2></div>
+				<div class="heading-wrapper">
+					<h1>Comp-sci,</h1>
+				</div>
+				<div class="heading-wrapper">
+					<h1>Design,</h1>
+				</div>
+				<div class="heading-wrapper">
+					<h1>& more!!!</h1>
+				</div>
+				<a class="button" href="about.html"><h2>Read more</h2></a>
 			</div>
 		</section>
 
@@ -127,19 +155,30 @@
 				<table style="margin-top: 84px;">
 					<tr><td>
 						<h2>UI design & fullstack developement</h2>
-						<h1>Pizza 4p's app</h1>
+						<div class="heading-wrapper">
+							<h1>Pizza 4p's app</h1>
+						</div>
 					</td></tr>
 					<tr><td>
 						<h2>UI design & fullstack developement</h2>
-						<h1>ready, set, fit</h1>
+						<div class="heading-wrapper">
+							<h1>ready, set, fit</h1>
+						</div>
 					</td></tr>
 					<tr><td>
 						<h2>UI/ux design</h2>
-						<h1>trekkrs</h1>
+						<div class="heading-wrapper">
+							<h1>trekkrs</h1>
+						</div>
 					</td></tr>
 					<tr><th>
-						<img src="assets/ArrowRight.svg" alt="arrowRight" style="color: #222226;">
-						<h1>More work</h1>
+						<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.13867 10.2808L22.0288 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M17.2637 16.0977L22.8614 10.4999L17.2637 4.90222" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						<div class="heading-wrapper">
+							<h1>More work</h1>
+						</div>
 					</th></tr>
 				</table>
 
@@ -148,7 +187,7 @@
 					<div class="seperator-h" style="background-color: #F4F4F4;"></div>
 
 					<div class="footer-wrapper">
-						<img src="assets/cLogo-white.svg" alt="logo" width="92px" height="92px">
+						<a href="" style="width: 92px; height: 92px;" id="logo"></a>
 
 						<div class="seperator-v web-elem" style="background-color: #F4F4F4;"></div>
 
@@ -177,7 +216,7 @@
 
 	<!-- COPYRIGHT -->
 	<section class="copyright">
-		<small>All ©RIGHTS RESERVED</small>
+		<small>© MADE WITH ❤️ BY CƯƠNG NGUYỄN</small>
 	</section>
 	
 </body>

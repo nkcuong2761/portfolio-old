@@ -15,11 +15,22 @@ function openMenu() {
 }
 
 $(document).ready(function() {
-  $('.nav-icon').hover(function() {
-    $(this).attr('src', this.src.substring(0, this.src.length-4) + '-filled.svg');
-  },
-  function() {
-    $(this).attr('src', this.src.substring(0, this.src.length-11) + '.svg');
-  }
-  );
+  $('tr').click(function() {
+    window.location.href = "works.html";
+  })
 });
+
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('animated-text');
+    }
+  });
+});
+const headings = document.querySelectorAll('h1');
+headings.forEach(h => {
+  observer.observe(h)
+})

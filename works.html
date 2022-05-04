@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="styleAbout.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 </head>
 <body>
 	<!-- NAV BAR -->
@@ -23,9 +23,9 @@
 					</ul>
 					<li><a href="index.html"><img src="assets/cLogo.svg" width="54px" height="54px"></a></li>
 					<ul class="nav-container">
-						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
-						<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
-						<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
+						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="nav-icon" id="linkedin"></a>
+						<a href="https://github.com/nkcuong2761" target="_blank" class="nav-icon" id="github"></a>
+						<a href="https://dribbble.com/ckuong" target="_blank" class="nav-icon" id="dribbble"></a>
 					</ul>
 					<img src="assets/List.svg" id="menu-icon" onclick="openMenu()">
 				</ul>
@@ -50,7 +50,9 @@
 					<div class="line-wrapper">
             <div class="image-wrapper"><img src="assets/pattern-big.png" style="
               transform: scale(3) translate(10%, 10%);"></div>
-						<h1>My works</h1>
+						<div class="heading-wrapper">
+              <h1>My works</h1>
+            </div>
 						<div class="image-wrapper"><img src="assets/pattern-big.png" style="
               transform: scale(3) translate(-10%, 10%);"></div>
 					</div>
@@ -58,14 +60,18 @@
         <div class="h-container_grid mobile-elem">
 					<div>
             <div class="line-wrapper">
-              <h1>My</h1>
+              <div class="heading-wrapper">
+                <h1>My</h1>
+              </div>
               <div class="image-wrapper"><img src="assets/pattern-mobile-s2.png" style="
                 transform: scale(3) translate(-10%, 5%);"></div>
             </div>
             <div class="line-wrapper">
               <div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
                 transform: scale(3.2) translate(0, 5%);"></div>
-              <h1>works</h1>
+              <div class="heading-wrapper">
+                <h1>works</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -77,13 +83,13 @@
 		</section>
 
 		<section class="my-works">
-			<div class="wrapper-grid" style="padding-top: 128px;">
+			<div class="wrapper-grid" style="padding-top: 0;">
 				<!-- FOOTER -->
 				<footer>
-					<div class="seperator-h" style="background-color: #F4F4F4;"></div>
+					<!-- <div class="seperator-h" style="background-color: #F4F4F4;"></div> -->
 
 					<div class="footer-wrapper">
-						<img src="assets/cLogo-white.svg" alt="logo" width="92px" height="92px">
+						<a href="index.html" style="width: 92px; height: 92px;" id="logo"></a>
 
 						<div class="seperator-v web-elem" style="background-color: #F4F4F4;"></div>
 
@@ -113,7 +119,7 @@
 
 	<!-- COPYRIGHT -->
 	<section class="copyright">
-		<small>All ©RIGHTS RESERVED</small>
+		<small>© MADE WITH ❤️ BY CƯƠNG NGUYỄN</small>
 	</section>
 	
 </body>

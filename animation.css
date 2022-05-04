@@ -1,0 +1,83 @@
+.button, .nav-logo, footer #logo, .nav-icon, a {
+  transition: 0.25s;
+}
+
+#linkedin {
+  background-image: url("assets/LinkedinLogo.svg");
+}
+#linkedin:hover, #linkedin:focus {
+  background-image: url("assets/LinkedinLogo-filled.svg");
+}
+#github {
+  background-image: url("assets/GithubLogo.svg");
+}
+#github:hover, #github:focus {
+  background-image: url("assets/GithubLogo-filled.svg");
+}
+#dribbble {
+  background-image: url("assets/DribbbleLogo.svg");
+}
+#dribbble:hover, #dribbble:focus {
+  background-image: url("assets/DribbbleLogo-filled.svg");
+}
+
+.button:hover, .button:focus {
+  color: #F4F4F4;
+  box-shadow: inset 0 -4.5rem 0 0 #E860ED;
+}
+.button:hover, .button:focus svg {
+  fill:#F4F4F4;
+}
+
+td, th {
+  transition: 0.35s;
+}
+td:hover, td:focus {
+  color:#E860ED;
+  box-shadow: inset 0 -24rem 0 0 #F4F4F4;
+  cursor: pointer;
+}
+th:hover, th:focus {
+  color:#F4F4F4;
+  box-shadow: inset 0 -24rem 0 0 #E860ED;
+  cursor: pointer;
+}
+
+footer #logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("assets/cLogo-white.svg");
+  background-size:contain;
+}
+footer #logo:hover {
+  background-image: url("assets/cLogo-pink.svg");
+  cursor: pointer;
+}
+
+.hero-banner h1 {
+  position: relative;
+  top: 6rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .animated-text {
+    position: relative;
+    animation: anim-lineUp 0.5s ease-out;
+    animation-fill-mode: forwards;
+  }
+  .animated-text.delay1 {
+    animation: anim-lineUp 0.5s ease-out 0.2s;
+    animation-fill-mode: forwards;
+  }
+  .animated-text.delay2 {
+    animation: anim-lineUp 0.5s ease-out 0.4s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes anim-lineUp {
+  0% {
+    top: 6rem;
+  }
+  100% {
+    top: 0;
+  }
+}

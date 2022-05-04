@@ -1,3 +1,5 @@
+@import 'animation.css';
+
 /* GLOBAL STYLING */
 html {
     font-size: 100%;
@@ -60,6 +62,7 @@ em {
 
 a { color: #222226; text-decoration: none; }
 a:hover{ color:#E860ED; }
+footer a:hover {text-decoration: underline; }
 
 /* random stuffs */
 .wrapper-grid {
@@ -142,8 +145,9 @@ nav ul {
     gap: 1rem;
     height: var(--headingHeight);
 }
-.line-wrapper h1 {
+.heading-wrapper {
     flex-shrink: 0;
+    overflow: hidden;
 }
 .line-wrapper .button {
     flex-grow: 3;
@@ -173,6 +177,8 @@ nav ul {
     justify-content: center;
     color: #E860ED;
     border: 2px solid #E860ED;
+    z-index: 5;
+    font-family: inherit;
 }
 
 /* ABOUT ME */
@@ -224,10 +230,6 @@ td {
     color: #F4F4F4;
     background-color: #222226;
 }
-td:hover {
-    color:#E860ED;
-    background-color: #F4F4F4;
-}
 td, th {
     display: flex;
     flex-direction: column;
@@ -241,10 +243,6 @@ th {
     background-color: #F4F4F4;
     color: #222226;
 }
-th:hover {
-    background-color: #E860ED;
-    color: #F4F4F4;
-}
 
 /* FOOTER */
 footer {
@@ -255,8 +253,8 @@ footer {
     align-items: flex-start;
     gap: 8rem;
 }
-.footer-wrapper img {
-    padding: var(--gap) 0 0 var(--gap)
+.footer-wrapper #logo {
+    margin: var(--gap) 0 0 var(--gap)
 }
 .footer-contact {
     padding-top: var(--gap);
@@ -335,8 +333,8 @@ footer {
         flex-direction: column;
         gap: 2rem;
     }
-    .footer-wrapper img {
-        padding: 2rem 0 0 0;
+    .footer-wrapper #logo {
+        margin: 2rem 0 0 0;
     }
 
     h1 {
