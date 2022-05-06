@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cuong Nguyen's portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<!-- NAV BAR -->
+	<header style="padding-top: 16px;">
+		<nav class="wrapper-grid">
+				<ul>
+					<ul class="nav-container">
+						<a href="about.html"><li><h2>About</h2></li></a>
+						<a href="works.html"><li><h2>Works</h2></li></a>
+					</ul>
+					<li><a href="index.html"><img src="assets/cLogo.svg" width="54px" height="54px"></a></li>
+					<ul class="nav-container">
+						<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="nav-icon" id="linkedin"></a>
+						<a href="https://github.com/nkcuong2761" target="_blank" class="nav-icon" id="github"></a>
+						<a href="https://dribbble.com/ckuong" target="_blank" class="nav-icon" id="dribbble"></a>
+					</ul>
+					<img src="assets/List.svg" id="menu-icon" onclick="openMenu()">
+				</ul>
+		</nav>
+		<div id="dropdown-menu">
+			<a href="about.html"><h2>About</h2></a>
+			<a href="works.html"><h2>Works</h2></a>
+			<ul>
+				<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><li><img class="nav-icon" src="assets/LinkedinLogo.svg"></li></a>
+				<a href="https://github.com/nkcuong2761" target="_blank"><li><img class="nav-icon" src="assets/GithubLogo.svg"></li></a>
+				<a href="https://dribbble.com/ckuong" target="_blank"><li><img class="nav-icon" src="assets/DribbbleLogo.svg"></li></a>
+			</ul>
+		</div>
+		<div class="seperator-h" style="background-color: #222226; margin: 0 var(--gap);"></div>
+	</header>
+
+	<!-- HERO BANNER -->
+	<main>
+		<section class="hero-banner">
+			<div class="wrapper-grid">
+        <div class="h-container_grid web-elem">
+					<div class="line-wrapper">
+						<div class="heading-wrapper">
+              <h1>The Joseph</h1>
+            </div>
+            <div class="image-wrapper"><img src="assets/pattern-big.png" style="
+              transform: scale(3) translate(10%, 10%);"></div>
+					</div>
+          <div class="line-wrapper">
+						<div class="image-wrapper"><img src="assets/pattern-small-1.png" style="
+              transform: scale(2.5) translate(10%, 0);"></div>
+						<div class="heading-wrapper">
+							<h1 class="delay1">Priestley House</h1>
+						</div>
+					</div>
+
+        </div>
+        <div class="h-container_grid mobile-elem">
+					<div>
+            <div>
+              <div class="line-wrapper">
+                <div class="heading-wrapper">
+                  <h1>The</h1>
+                </div>
+                <div class="image-wrapper"><img src="assets/pattern-mobile-s2.png" style="
+                  transform: scale(4) translate(36%, 0);"></div>
+              </div>
+              <div class="line-wrapper">
+                <div class="heading-wrapper">
+                  <h1>Joseph</h1>
+                </div>
+                <div class="image-wrapper"><img src="assets/pattern-mobile-s1.png" style="
+                  transform: scale(4) translate(36%, 16%);"></div>
+              </div>
+              <div class="line-wrapper">
+                <div class="image-wrapper"><img src="assets/pattern-mobile-s3.png" style="
+                  transform: scale(7) translate(40%, 10%);"></div>
+                <div class="heading-wrapper">
+                  <h1>Priestley</h1>
+                </div>
+              </div>
+              <div class="line-wrapper">
+                <div class="image-wrapper"><img src="assets/pattern-mobile-b.png" style="
+                  transform: scale(4) translate(30%, 10%);"></div>
+                <div class="heading-wrapper">
+                  <h1>House</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img class="img-product" src="assets/josephP/Desktop.png">
+        
+        <div style="display: flex; justify-content: center;">
+          <div id="para">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu tincidunt ligula, ac ultrices felis. Donec malesuada vehicula mi, eget tincidunt est cursus in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut pellentesque consectetur ultricies. Donec vitae euismod nisi, quis sollicitudin ante. Nam eu feugiat nibh.<br><br>
+                    Donec ultrices imperdiet tellus, vitae gravida ipsum convallis eget. Nam vitae venenatis sem, in mattis libero. Maecenas mi sem, bibendum a odio ut, ornare molestie urna. Duis rhoncus sapien eget nibh porttitor, eu elementum ipsum efficitur.</p>
+            <a class="next-work-link" href="work-pizza4p.html">
+              <h3>Pizza 4P's</h3>
+              <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.13867 10.2808L22.0288 10.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.2637 16.0977L22.8614 10.4999L17.2637 4.90222" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+			</div>
+		</section>
+
+    <section class="my-works">
+			<div class="wrapper-grid" style="padding-top: 0;">
+				<!-- FOOTER -->
+				<footer>
+					<!-- <div class="seperator-h" style="background-color: #F4F4F4;"></div> -->
+
+					<div class="footer-wrapper">
+						<a href="index.html" style="width: 92px; height: 92px;" id="logo"></a>
+
+						<div class="seperator-v web-elem" style="background-color: #F4F4F4;"></div>
+
+						<div class="footer-contact">
+							<div>
+								<small>Email:</small>
+								<a href="mailto:ckn006@bucknell.edu"><em>ckn006@bucknell.edu</em></a>
+							</div>
+							<div>
+								<small>Phone:</small>
+								<em>+1 272 788-0021</em>
+							</div>
+							<div>
+								<small>Follow me:</small>
+								<a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank"><em>Linkedin</em></a>
+								<a href="https://github.com/nkcuong2761" target="_blank"><em>Github</em></a>
+								<a href="https://dribbble.com/ckuong" target="_blank"><em>Dribbble</em></a>
+							</div>
+						</div>
+
+					</div>
+				</footer>
+
+			</div>
+		</section>
+	</main>
+
+	<!-- COPYRIGHT -->
+	<section class="copyright">
+		<small>© MADE WITH ❤️ BY CƯƠNG NGUYỄN</small>
+	</section>
+	
+</body>
+</html>

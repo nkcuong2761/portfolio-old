@@ -16,7 +16,7 @@ function openMenu() {
 
 $(document).ready(function() {
   $('tr').click(function() {
-    window.location.href = "works.html";
+    window.location.href = $(this).attr("id")+".html";
   })
 });
 

@@ -2,6 +2,14 @@
   transition: 0.25s;
 }
 
+a { text-decoration: none; }
+header a { color: #222226; }
+header a:hover{ color:#E860ED; }
+main a { color:#E860ED; }
+.next-work-link:hover, footer a:hover {
+  text-decoration: underline;
+}
+
 #linkedin {
   background-image: url("assets/LinkedinLogo.svg");
 }
